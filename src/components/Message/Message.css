@@ -1,0 +1,32 @@
+ul {
+  list-style: none;
+}
+.container {
+  margin: 1rem 2rem;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 45px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}

@@ -1,0 +1,62 @@
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+.channel {
+  display: flex;
+  margin: 1rem 0rem;
+  padding: 1rem 4rem;
+  align-items: center;
+}
+.channel h2 {
+  padding: 0rem 2rem;
+}
+
+.user img {
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.signout {
+  cursor: pointer;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 12rem;
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+.signout h2 {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.signin {
+  cursor: pointer;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  border-radius: 2rem;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 35%;
+}
+
+.signin h2 {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}

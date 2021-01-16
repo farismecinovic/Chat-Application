@@ -1,0 +1,61 @@
+.chatbox {
+  display: flex;
+  flex: 3;
+  position: relative;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+/* sadsa */
+.chat-form {
+  position: sticky;
+  width: 100%;
+  background: linear-gradient(to left bottom, #65dfc9, #6cdbeb);
+  bottom: 0;
+  left: 0;
+  max-width: auto;
+  width: 36rem;
+  height: 50px;
+}
+.chat-form form {
+  max-width: auto;
+  width: 32rem;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.chat-form input {
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  min-width: 90%;
+  padding-left: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+}
+.chat-form button {
+  width: 10%;
+  height: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  font-weight: bold;
+}
+
+.send-icon {
+  color: #426696;
+  width: 2rem;
+  height: 3rem;
+}
