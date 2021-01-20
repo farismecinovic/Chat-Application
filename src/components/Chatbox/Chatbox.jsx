@@ -48,44 +48,73 @@ const Chatbox = ({ user = null, db = null }) => {
   };
 
   return (
-    <div className="chatbox">
-      <ul>
-        {messages.map((message) => (
-          <li key={message.id}>
-            <Message {...message} />
-          </li>
+    // <div className="chatbox">
+    //   <ul>
+    //     {messages.map((message) => (
+    //       <li key={message.id}>
+    //         <Message {...message} />
+    //       </li>
+    //     ))}
+    //   </ul>
+
+    //   <div className="chat-form">
+    //     <form id="chat-form" onSubmit={handleOnSubmit}>
+    //       <input
+    //         id="text-message"
+    //         type="text"
+    //         value={newMessage}
+    //         onChange={handleOnChange}
+    //         placeholder="Type your message here ..."
+    //       />
+    //       <button type="submit" disabled={!newMessage}>
+    //         <svg
+    //           className="send-icon"
+    //           aria-hidden="true"
+    //           focusable="false"
+    //           data-prefix="fas"
+    //           data-icon="paper-plane"
+    //           role="img"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //           viewBox="0 0 512 512"
+    //         >
+    //           <path
+    //             fill="currentColor"
+    //             d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+    //           />
+    //         </svg>
+    //       </button>
+    //     </form>
+    //   </div>
+    // </div>
+    <main>
+      <header>
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg"
+          alt
+        />
+        <div>
+          <h2>Chat with Vincent Porter</h2>
+          <h3>already 1902 messages</h3>
+        </div>
+      </header>
+      <ul id="chat">
+        {messages.map((el) => (
+          <Message {...el} user={displayName} />
         ))}
       </ul>
 
-      <div className="chat-form">
-        <form id="chat-form" onSubmit={handleOnSubmit}>
+      <footer>
+        <form onSubmit={handleOnSubmit}>
           <input
-            id="text-message"
+            disabled={!newMessage}
+            placeholder="Type your message"
             type="text"
             value={newMessage}
             onChange={handleOnChange}
-            placeholder="Type your message here ..."
           />
-          <button type="submit" disabled={!newMessage}>
-            <svg
-              className="send-icon"
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="paper-plane"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <path
-                fill="currentColor"
-                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
-              />
-            </svg>
-          </button>
         </form>
-      </div>
-    </div>
+      </footer>
+    </main>
   );
 };
 
