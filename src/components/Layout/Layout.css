@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -67,4 +67,22 @@ main {
 .circle2 {
   bottom: 5%;
   left: 10%;
+} */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #73d2f1;
+  font-family: Arial;
+}
+#container {
+  width: 850px;
+  height: 700px;
+  background: #eff3f7;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 0;
+  border-radius: 5px;
+  overflow: hidden;
 }

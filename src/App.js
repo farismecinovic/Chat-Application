@@ -38,6 +38,7 @@ function App() {
     }
   };
 
+  console.log("user:", user)
   const signOut = async () => {
     try {
       await firebase.auth().signOut();
@@ -74,11 +75,11 @@ function App() {
 </Layout>
         </>
       ) : (
-        <Layout>
+
   <div className="signin" onClick={signInWithGoogle}>
         <h2>Sign in</h2>
       </div>
-        </Layout>
+
       )}
     </div>
   );
