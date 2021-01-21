@@ -16,7 +16,7 @@ const Dashboard = ({ children, user, signOut }) => {
       <ul>
         <li>
           <img
-            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
+            src="https://firebasestorage.googleapis.com/v0/b/react-chat-73602.appspot.com/o/chat.png?alt=media&token=1ce2d492-5c6a-491e-bc03-1faf3a60c04b"
             width="40"
             height="40"
             alt="ChatRoomLogo"
@@ -27,7 +27,7 @@ const Dashboard = ({ children, user, signOut }) => {
         </li>
         <li>
           <img
-            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
+            src="https://firebasestorage.googleapis.com/v0/b/react-chat-73602.appspot.com/o/chat.png?alt=media&token=1ce2d492-5c6a-491e-bc03-1faf3a60c04b"
             width="40"
             height="40"
             alt="ChatRoomLogo"
@@ -38,7 +38,7 @@ const Dashboard = ({ children, user, signOut }) => {
         </li>
         <li>
           <img
-            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
+            src="https://firebasestorage.googleapis.com/v0/b/react-chat-73602.appspot.com/o/chat.png?alt=media&token=1ce2d492-5c6a-491e-bc03-1faf3a60c04b"
             width="40"
             height="40"
             alt="ChatRoomLogo"
@@ -49,7 +49,7 @@ const Dashboard = ({ children, user, signOut }) => {
         </li>
         <li>
           <img
-            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
+            src="https://firebasestorage.googleapis.com/v0/b/react-chat-73602.appspot.com/o/chat.png?alt=media&token=1ce2d492-5c6a-491e-bc03-1faf3a60c04b"
             width="40"
             height="40"
             alt="ChatRoomLogo"
