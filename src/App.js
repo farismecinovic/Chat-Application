@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//COMPONENTS
 //FIREBASE
 import firebase from "firebase/app";
 import "firebase/auth";
@@ -7,6 +6,7 @@ import "firebase/firestore";
 import Layout from "./components/Layout/Layout";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Chatbox from "./components/Chatbox/Chatbox";
+import Spinner from "./components/Spinner/Spinner";
 
 firebase.initializeApp({
   apiKey: "AIzaSyCSMyQNlZ9wdQTSmnanp0aMUejKfsGqVTo",
@@ -38,7 +38,6 @@ function App() {
     }
   };
 
-  console.log("user:", user)
   const signOut = async () => {
     try {
       await firebase.auth().signOut();
@@ -63,23 +62,20 @@ function App() {
     return unsubscribe;
   }, [initializing]);
 
-  if (initializing) return "Loading...";
+  if (initializing) return <Spinner />;
   return (
     <div>
       {user ? (
         <>
-          <Layout >
-
-            <Dashboard user={user} signOut={signOut}/>
-            <Chatbox user={user} db={db}/>
-</Layout>
+          <Layout>
+            <Dashboard user={user} signOut={signOut} />
+            <Chatbox user={user} db={db} />
+          </Layout>
         </>
       ) : (
-
-  <div className="signin" onClick={signInWithGoogle}>
-        <h2>Sign in</h2>
-      </div>
-
+        <div className="signin" onClick={signInWithGoogle}>
+          <h2>Sign in</h2>
+        </div>
       )}
     </div>
   );

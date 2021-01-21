@@ -5,29 +5,6 @@ const Dashboard = ({ children, user, signOut }) => {
   const { photoURL, displayName } = user;
 
   return (
-    // <div className="dashboard">
-    //   <div className="user">
-    //     <img src={photoURL} alt="Avatar" />
-    //     <h3>{displayName}</h3>
-    //   </div>
-    //   <div className="links">
-    //     <div className="channel">
-    //       <h2>Channel 1 </h2>
-    //     </div>
-    //     <div className="channel">
-    //       <h2>Channel 2</h2>
-    //     </div>
-    //     <div className="channel">
-    //       <h2>Channel 3</h2>
-    //     </div>
-    //     <div className="channel">
-    //       <h2>Soon channels</h2>
-    //     </div>
-    //   </div>
-    //   <div className="signout" onClick={signOut}>
-    //     <h2>Sign out</h2>
-    //   </div>
-    // </div>
     <aside>
       <header>
         <div className="profile-info">
@@ -39,7 +16,7 @@ const Dashboard = ({ children, user, signOut }) => {
       <ul>
         <li>
           <img
-            src="https://img.icons8.com/ios/452/filled-chat.png"
+            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
             width="40"
             height="40"
             alt="ChatRoomLogo"
@@ -50,7 +27,7 @@ const Dashboard = ({ children, user, signOut }) => {
         </li>
         <li>
           <img
-            src="https://img.icons8.com/ios/452/filled-chat.png"
+            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
             width="40"
             height="40"
             alt="ChatRoomLogo"
@@ -61,7 +38,7 @@ const Dashboard = ({ children, user, signOut }) => {
         </li>
         <li>
           <img
-            src="https://img.icons8.com/ios/452/filled-chat.png"
+            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
             width="40"
             height="40"
             alt="ChatRoomLogo"
@@ -72,7 +49,7 @@ const Dashboard = ({ children, user, signOut }) => {
         </li>
         <li>
           <img
-            src="https://img.icons8.com/ios/452/filled-chat.png"
+            src="https://www.flaticon.com/svg/vstatic/svg/2950/2950581.svg?token=exp=1611238070~hmac=1dbb1abe967b3dcaabb54950cd5c5210"
             width="40"
             height="40"
             alt="ChatRoomLogo"
