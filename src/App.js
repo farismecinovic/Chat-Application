@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import "./components/Dashboard/Dashboard.css";
 import Layout from "./components/Layout/Layout";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Chatbox from "./components/Chatbox/Chatbox";
@@ -74,7 +75,7 @@ function App() {
         </>
       ) : (
         <div className="signin" onClick={signInWithGoogle}>
-          <h2>Sign in</h2>
+          <h4>Sign in with Google</h4>
         </div>
       )}
     </div>
