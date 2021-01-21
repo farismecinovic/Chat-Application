@@ -73,13 +73,13 @@ main {
   box-sizing: border-box;
 }
 body {
-  background-color: #73d2f1;
+  background-color: #c3edea;
   font-family: Arial;
 }
 #container {
   width: 850px;
   height: 700px;
-  background: #eff3f7;
+  background: #f8f3eb;
   margin: 0 auto;
   margin-top: 40px;
   font-size: 0;
